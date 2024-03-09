@@ -1,0 +1,8 @@
+.vscode
+
+# ignore generated .exe files with output folders
+abstract-factory/output/
+composite/output/
+singleton/output/
+decorator/output/
+observer/output/
