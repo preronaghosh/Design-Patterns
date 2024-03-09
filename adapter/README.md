@@ -1,0 +1,5 @@
+The Adapter Design Pattern is a structural design pattern that allows incompatible interfaces to work together. It acts as a bridge between two incompatible interfaces by converting the interface of a class into another interface that a client expects. This pattern allows classes with different interfaces to work together smoothly.
+
+
+A real-life example of the Adapter pattern can be found in the realm of electronic devices and power adapters. Consider the scenario where you have electronic devices with different types of power plugs (e.g., Type A, Type B, Type C), and you are traveling to a country where the power outlets use a different type of plug.
+In this situation, you might need a power adapter to convert the plug of your electronic device into the one compatible with the power outlets of the destination country. The power adapter acts as an adapter between your device (the client) and the power outlet (the target interface), allowing them to work together seamlessly.
