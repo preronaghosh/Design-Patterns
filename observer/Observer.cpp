@@ -10,6 +10,7 @@ public:
     virtual ~Observer() = default;
 };
 
+// ConcreteObserver of one type; there can be more types of ConcreteObservers
 class ConcreteObserver : public Observer {
 public:
     ConcreteObserver(const int id) : observerId{id} {}

@@ -54,6 +54,23 @@ public:
     }
 };
 
+// class to encapsulate ony creation logic
+class AnyDocCreator : public DocumentCreator {
+public:
+    explicit AnyDocCreator(const int type) : _type{type} {}
+    
+    Document* createDocument() const override {
+        if (_type == 1) {
+            return new WordDocument();
+        } else {
+            return new PDFDocument();
+        }
+    }   
+
+private:
+    int _type; // 1 - create word, else - create pdf
+};
+
 // Client Code
 void clientCode(const DocumentCreator& creator) {
     Document* document = creator.createDocument();
@@ -72,6 +89,14 @@ int main() {
     // Using Word Document Creator
     WordDocumentCreator wordCreator;
     clientCode(wordCreator);
+
+    std::cout << "Creating and working with Word document:" << std::endl;
+    AnyDocCreator docCreator1(1);
+    clientCode(docCreator1);
+
+    std::cout << "Creating and working with PDF document:" << std::endl;
+    AnyDocCreator docCreator2(2);
+    clientCode(docCreator2);
 
     return 0;
 }
