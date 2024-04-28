@@ -1,0 +1,1 @@
+*The Chain of Responsibility* pattern is a behavioral design pattern where a request is sent through a chain of handlers. Each handler has the opportunity to either handle the request or pass it on to the next handler in the chain.
