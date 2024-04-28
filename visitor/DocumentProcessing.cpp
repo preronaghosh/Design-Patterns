@@ -1,5 +1,6 @@
 #include<iostream>
 #include<vector>
+#include<memory>
 
 // Forward declarations
 class Paragraph;
@@ -78,21 +79,28 @@ public:
 };
 
 int main() {
-    Paragraph p;
-    Header h;
-    Image img;
+    // Create all concrete elements
+    std::vector<std::unique_ptr<DocumentElement>> listOfElements;
 
+    listOfElements.emplace_back(std::make_unique<Paragraph>());
+    listOfElements.emplace_back(std::make_unique<Header>());
+    listOfElements.emplace_back(std::make_unique<Image>());
+
+    // Create all concrete visitors
     SpellChecker spellChecker;
-    std::cout << "Starting spell check on all documents.." << std::endl;
-    spellChecker.process(p);
-    spellChecker.process(h);
-    spellChecker.process(img);
-
     HtmlConverter htmlConv;
+
+    std::cout << "Starting spell checking on all documents.." << std::endl;
+    for(const auto& element : listOfElements) {
+        element->accept(spellChecker);
+    }
+
+    std::cout << "------------------------------------------" << std::endl;
+
     std::cout << "Starting conversion of all documents to Html.." << std::endl;
-    htmlConv.process(p);
-    htmlConv.process(h);
-    htmlConv.process(img);
+    for(const auto& element : listOfElements) {
+        element->accept(htmlConv);
+    }
 
     return 0;
 }
