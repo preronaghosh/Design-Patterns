@@ -1,3 +1,11 @@
+# Description:
+This project contains implementation and notes for most of the Design Patterns used in Software Engineering. 
+For most of the design patterns, generic and a practical use case has been implemented within respective folders for better understanding of when to apply each of the patterns.
+
+#### Programming Language: C++
+
+## Design Patterns covered:
+
 ### Creational Patterns:
 - Singleton
 - Factory Method
