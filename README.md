@@ -16,6 +16,7 @@ For most of the design patterns, generic template code, as well as a practical u
 - Composite
 - Decorator
 - Proxy
+- Facade
 
 ### Behavioral Patterns:
 - Chain of Responsibility
