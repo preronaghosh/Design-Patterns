@@ -11,6 +11,7 @@ For most of the design patterns, generic template code, as well as a practical u
 - Factory Method
 - Abstract Factory
 - Builder 
+- Prototype
 
 ### Structural Patterns:
 - Adapter
