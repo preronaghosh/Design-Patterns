@@ -10,6 +10,7 @@ For most of the design patterns, generic template code, as well as a practical u
 - Singleton
 - Factory Method
 - Abstract Factory
+- Builder 
 
 ### Structural Patterns:
 - Adapter
