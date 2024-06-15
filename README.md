@@ -29,9 +29,9 @@ For most of the design patterns, generic template code, as well as a practical u
 - Strategy
 - Template Method
 - Visitor
+- Interpreter
 
 (Pending)
-- Interpreter
 - Iterator 
 - Mediator
 - Memento
