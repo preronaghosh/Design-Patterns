@@ -19,6 +19,8 @@ For most of the design patterns, generic template code, as well as a practical u
 - Decorator
 - Proxy
 - Facade
+- Bridge 
+- Flyweight
 
 ### Behavioral Patterns:
 - Chain of Responsibility
@@ -27,3 +29,10 @@ For most of the design patterns, generic template code, as well as a practical u
 - Strategy
 - Template Method
 - Visitor
+
+(Pending)
+- Interpreter
+- Iterator 
+- Mediator
+- Memento
+- State
