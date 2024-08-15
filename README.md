@@ -31,8 +31,8 @@ For most of the design patterns, generic template code, as well as a practical u
 - Visitor
 - Interpreter
 - State
+- Iterator
 
 (Pending)
-- Iterator 
 - Mediator
 - Memento
