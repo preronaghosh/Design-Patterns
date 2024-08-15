@@ -30,9 +30,9 @@ For most of the design patterns, generic template code, as well as a practical u
 - Template Method
 - Visitor
 - Interpreter
+- State
 
 (Pending)
 - Iterator 
 - Mediator
 - Memento
-- State
